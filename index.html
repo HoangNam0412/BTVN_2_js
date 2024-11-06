@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Quizz 0.
+// //bai1.
+//     let n = prompt("Nhập chuỗi vào đi cu");
+//         if (n >= 8){
+//             alert("Chuỗi này ổn");
+//         }else{
+//             alert("Ngắn quá, dài thêm tí nữa");
+//     }
+
+//bai2.
+// let a = parseInt(prompt("Nhập số vào đi cu"));
+//         if(a >= 18){
+//             alert("Đủ 18 rồi! quẩy thôi");
+//         }
+//             else if(a>=16){
+//                 alert("Đợi thêm ít năm nữa");
+            
+//             }else{
+//                 alert("Còn quá trẻ em ạ")
+//             }
+
+//bai3.
+    // let sum = 0;
+    // for (let i = 1; i <= 50; i++){
+    //     sum +=  i;
+    // }
+    // alert(""+sum);
+
+// //bai4.
+// let sum = 0;
+//     for (let i = -10; i <= 50; i+=2){
+//         sum +=  i;
+//     }
+//     alert("Kết quả tổng số chẵn từ -10 đến 50 là: "+sum);
+
+//bai5
+// for(let i = -100; i<100; i++){
+//     if(i % 9 == 0){
+//         alert(""+i)
+//     }
+// }
+
+//bai6
+// let i = 1;
+// while(i <=200){
+//     console.log(i)
+//     i++
+// }
+
+//bai7
+// let s = prompt("Nhập vào chuỗi s:"); 
+// let l = parseInt(prompt("Nhập vào số l:"));
+// while (s.length < l) { 
+//     s += 'a'; 
+// }
+// alert("Chuỗi sau khi thêm: " + s);
+
+//bai8
+// let x = parseInt(prompt("Nhập x: "));
+// let y = parseInt(prompt("Nhập y: "));
+// if(x>= 0 && x<y && y<= 100 ){
+//     while(x<y){
+//         alert("x= "+x+", y= "+y);
+//         x++;
+//         y--;
+// } 
+// }
+
+//Thực Hành
+//Bài 1
+// let i = 0;
+// for(let i = 1; i <= 500; i++){
+//     console.log(i);
+// }
+
+//Bài 2
+        // let n = parseInt(prompt("Nhập số n: "));
+        // let Thuaso = 1;
+        // for(let i = 1; i<= n ;i++){
+        //     Thuaso *= i;
+        // }
+        // alert("Giai thừa của "+n+ " là: "+Thuaso);
+//Bài 3
+// let a = parseInt(prompt("Nhập vào số a:")); // Nhập a
+// let b = parseInt(prompt("Nhập vào số b:")); // Nhập b
+// let x = parseInt(prompt("Nhập vào số x:")); // Nhập x
+
+// if (a >= b) {
+//     alert("Giá trị không hợp lệ. Cần đảm bảo a < b.");
+// } else {
+//     let smallestMultiple = -1;
+//     if (a % x === 0) {
+//         smallestMultiple = a;
+//     } else {
+//         smallestMultiple = a + (x - (a % x));
+//     }
+//     if (smallestMultiple <= b) {
+//         alert("Số nhỏ nhất trong khoảng [" + a + ", " + b + "] chia hết cho " + x + " là: " + smallestMultiple);
+//     } else {
+//         alert("Không có số nào trong khoảng [" + a + ", " + b + "] chia hết cho " + x);
+//     }
+// }
+
+// //Bài 6
+//         let n = parseInt(prompt("Nhập vào n: "));
+//         let S = 0;
+//         for(let i = 1; i<=n; i++){
+//             S += i/(i+1);
+//         }
+//         alert("S= "+ S);
+        
+// //Bài 12
+//         let n = parseInt(prompt("Nhập 2 <= n <= 10 để ra bảng cửu chương:"))
+//         if(isNaN(n)|| n < 2 || n > 10){
+//             alert("Mời bạn nhập lại N trong khoảng 2->10!")
+//         }else{
+//             let result ="";
+//             for(let i = 1; i <= 10; i++){
+//              let S = i * n;
+//              result += `${i} * ${n} = ${S}\n`
+//             }
+//             alert(result)
+//         }
+        
+// //Bài 13 
+// let n = parseInt(prompt("Nhập vào số n (n >= 2):"));
+// if (isNaN(n) || n < 2) {
+//     alert("Mời bạn nhập số n lớn hơn hoặc bằng 2!");
+// } else {
+//     let square = ""; 
+//     for (let i = 0; i < n; i++) {
+//         for (let j = 0; j < n; j++) {
+//             square += "* "; 
+//         }
+//         square += "\n"; 
+//     }
+//     alert(square); 
+// }
+
+// Bài 14
+// let m = parseInt(prompt("Nhập vào chiều rộng m (m >= 2):"));
+// let n = parseInt(prompt("Nhập vào chiều cao n (n >= 2):"));
+
+// if (isNaN(m) || m < 2 || isNaN(n) || n < 2) {
+//     alert("Mời bạn nhập m và n lớn hơn hoặc bằng 2!");
+// } else {
+//     let rectangle = "";
+//     for (let i = 0; i < n; i++) { 
+//         for (let j = 0; j < m; j++) { 
+//             rectangle += "* "; 
+//         }
+//         rectangle += "\n"; 
+//     }
+//     alert(rectangle); 
+// }
+
+//Bài 15
+let n = parseInt(prompt("Nhập vào số n (n >= 3):"));
+
+if (isNaN(n) || n < 3) {
+    alert("Mời bạn nhập số n lớn hơn hoặc bằng 3!");
+} else {
+    let triangle = ""; // Chuỗi để lưu hình tam giác
+    for (let i = 1; i <= n; i++) { // Vòng lặp qua từng dòng từ 1 đến n
+        for (let j = 1; j <= i; j++) { // Vòng lặp in số ký tự * tương ứng với số dòng
+            triangle += "* ";
+        }
+        triangle += "\n"; 
+    }
+    alert(triangle); 
+}
+
+    </script>
+</body>
+</html>
